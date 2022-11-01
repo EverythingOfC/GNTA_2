@@ -4,6 +4,7 @@ import json
 import datetime
 import pandas as pd
 
+
 def weather_check():
     service_key = '434566486e746b66343949565a6a53'
     url = "http://openapi.seoul.go.kr:8088/"+service_key+"/json/fcltOpenInfo_GN/1/20/1168000000"
@@ -18,6 +19,7 @@ def weather_check():
     for i in r_dict:
         print(i['FCLT_NM'])
 
+        print("하하")
 
 
 
